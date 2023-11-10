@@ -1,0 +1,94 @@
+@font-face {
+  font-family: OPN;
+  src: url('../font/OpenSans-Italic-VariableFont_wdth.ttf');
+}
+
+@font-face {
+  font-family: OP;
+  src: url('../font/OpenSans-VariableFont_wdthwght.ttf');
+}
+
+@font-face {
+  font-family: Os;
+  src: url('../font/Oswald-VariableFont_wght.ttf');
+}
+body{
+  font-family: Os;
+}
+*,*:before,*:after {
+  box-sizing: inherit; /* Наследует значение родителя. */
+}
+
+.header{
+  font-size: 35px;
+  font-weight: 600;
+}
+.container{
+  min-width: 1100px;
+  margin-top: 0 ;
+  margin-left: auto;
+  margin-right: auto;
+}
+:root{
+  --accent-color:#F7654A;
+  --dark-color:#404149;
+  --grey-color:#999999;
+  --white-color:#ffffff;
+  --back-color:#F7F7F7;
+
+}
+
+.text-h2{
+  font-family: Os;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.text-h3{
+  font-family: Os;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.text-h4{
+  font-family: Os;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.text-p{
+  font-family: OPN;
+  font-size: 16px;
+
+}
+.text-p-reviews{
+  line-height: 21px;
+  font-family: OPN;
+  font-size: 14px;
+}
+
+.header{
+  min-height: 740px;
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__title {
+  display: flex;
+
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.burger {
+  height: 50px;
+  width: 50px;
+}
+.burger__line {
+}
+.main__title {
+}
+.under__title {
+}
