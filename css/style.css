@@ -14,20 +14,17 @@
 }
 body{
   font-family: Os;
+  margin: 0;
 }
 *,*:before,*:after {
   box-sizing: inherit; /* Наследует значение родителя. */
 }
 
-.header{
-  font-size: 35px;
-  font-weight: 600;
-}
+
 .container{
-  min-width: 1100px;
-  margin-top: 0 ;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1110px;
+  margin: 0 auto;
+  
 }
 :root{
   --accent-color:#F7654A;
@@ -76,7 +73,10 @@ body{
 }
 .header__title {
   display: flex;
-
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  margin-bottom: 112px;
 }
 .logo {
   width: 60px;
@@ -85,10 +85,108 @@ body{
 .burger {
   height: 50px;
   width: 50px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .burger__line {
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
 }
-.main__title {
+
+.burger__line:last-child {
+  margin-bottom: 0;
 }
-.under__title {
+
+h1{
+  font-weight: 500;  
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  line-height: 95px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  max-width: 734px;
+  margin: 0 auto;
+  padding-bottom: 17px;
 }
+h4{
+color: #FFF;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+margin: 0 auto;
+}
+
+
+section {
+  min-height: 1080px;
+  position: relative;
+  background-color: #F7F7F7;
+}
+.info {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  width: 100%;
+  width: 1110px;
+  min-height: 300px;
+  transform:translatex(-50%);
+  padding: 57px;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+}
+.about__grit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: center;
+}
+.about__grit-item {
+  text-align: center;
+  width: 190px;
+}
+.about__h4 {
+color: var(--accent-color);
+font-size: 72px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+.about-h5 {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about__p {
+color: var(--grey-color);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+@media screen and (max-width: 1200px){
+  .about__grit{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+}
+  
