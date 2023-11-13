@@ -227,6 +227,10 @@ line-height: normal;
 }
 
 @media screen and (max-width: 1200px){
+  .header__title{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .about__grit{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -379,6 +383,20 @@ align-items: center;
 padding: 14px 30px;
 margin-top: 20px;
 }
+.recuest-btn-2 {
+color: #000;
+text-transform: uppercase;
+font-size: 14px;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.7px;
+background-color: #FFF;
+display: flex;
+align-items: center;
+padding: 14px 30px;
+margin-top: 20px;
+margin-bottom: 30px;
+}
 .recuest_icon {
   margin-right: 15px;
 }
@@ -461,8 +479,6 @@ margin-top: 20px;
   }
 }
 
-.portfolio {
-}
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -523,30 +539,7 @@ margin-top: 20px;
   color: #000;
 }
 
-.quetion_h3.open::before{
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image:url(../img/Polygon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 13px;
-  transform: rotate(-90deg);
-}
-.quetion_h3.close::before{
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image:url(../img/Polygon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 15px;
-}
-.quetion_h3.close + .quetion__p{
-  display: none;
-}
+
 @media screen and (max-width: 1200px){
 
   .quetion {
@@ -603,6 +596,7 @@ margin-top: 20px;
 }
 .reviews-h2{
   padding-bottom: 60px;
+  font-weight: 600;
 }
 .text__h2 {
   text-align: center;
@@ -715,6 +709,7 @@ margin-top: 20px;
   padding: 30px 0;
   background-color: var(--dark-color);
   color: var(--back-color);
+  font-size: 20px;
 }
 .footer___flex {
   display: flex;
